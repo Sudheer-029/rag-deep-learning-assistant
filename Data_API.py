@@ -1,15 +1,3 @@
-'''
-from langchain_groq import ChatGroq
-
-llm = ChatGroq(
-    model="llama-3.1-8b-instant",
-    api_key="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"
-)
-
-response = llm.invoke("Explain vector databases in one paragraph")
-print(response)
-'''
-
 from dotenv import load_dotenv
 import os
 from langchain_groq import ChatGroq
@@ -22,3 +10,4 @@ llm = ChatGroq(model="llama-3.1-8b-instant")  # Will automatically pick up GROQ_
 
 response = llm.invoke("What is agentic AI?")
 print(response.content)
+
